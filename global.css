@@ -1,0 +1,31 @@
+:root {
+    color-scheme: light dark;
+}
+
+html {
+    --background-void: hsl(0, 0%, 84%);
+    --background-void-hover: hsl(0, 0%, 84%);
+    --background-surface: hsl(0, 0%, 88%);
+    --background-surface-hover: hsl(0, 0%, 88%);
+    --background-object: hsl(0, 0%, 85%);
+    --background-object-hover: hsl(0, 0%, 90%);
+    --foreground: hsl(0, 0%, 18%);
+    --foreground-invert: hsl(0, 0%, 96%);
+    --accent: hsl(202, 100%, 50%);
+    --accent-faded: hsla(202, 100%, 50%, 0.5);
+    --accent-hover: hsl(202, 100%, 62%);
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        --background-void: hsl(0, 0%, 27%);
+        --background-void-hover: hsl(0, 0%, 36%);
+        --background-surface: hsl(0, 0%, 39%);
+        --background-surface-hover: hsl(0, 0%, 42%);
+        --background-object: hsl(0, 0%, 61%);
+        --background-object-hover: hsl(0, 0%, 67%);
+        --foreground: hsl(0, 0%, 96%);
+        --foreground-invert: hsl(0, 0%, 8%);
+        --accent: rgb(45, 176, 252);
+    }
+}

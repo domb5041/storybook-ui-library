@@ -1,0 +1,38 @@
+.button {
+    border: none;
+    background-color: var(--background-object);
+    color: var(--foreground);
+    transition: 0.2s;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline-offset: 1px;
+    outline: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    .button-icon {
+        font-size: 22px;
+    }
+    &:focus {
+        outline-color: var(--accent-faded);
+    }
+    &:hover {
+        background-color: var(--background-object-hover);
+    }
+    &:active {
+        background-color: var(--background-object);
+    }
+}
+
+.button.primary {
+    background-color: var(--accent);
+    color: var(--foreground-invert);
+    &:hover {
+        background-color: var(--accent-hover);
+    }
+    &:active {
+        background-color: var(--accent);
+    }
+}
